@@ -1,0 +1,251 @@
+ /*
+    Name: A. Yusuf Kavranoglu
+    CS 132 Spring 2024
+    CP1
+    This is the styles.css page of the website in which I will present my
+    trip to Bosnia in 2023.
+
+
+    Justification for absolute positioning: I had to align city names on specific positions on a map image
+    so I had to use absolute positioning. El approved this.
+*/
+
+body, main {
+    display: flex;
+}
+
+body {
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(230, 245, 255, 0.5);
+    flex-direction: column;
+}
+
+main {
+    flex-direction: row;
+    flex-grow: 1;
+    flex-wrap: wrap;
+}
+
+header, footer, #images, #me, #goback, h1, h2 {
+    text-align: center;
+}
+
+#images, #me {
+    flex-grow: 3;
+    flex-basis: 300px;
+    border: solid;
+    border-width: 2px;
+    border-color: lightgray;
+    margin: 5px;
+}
+
+header > p {
+    font-family: montserrat, sans-serif;
+}
+
+#map-column {
+    flex-grow: 4;
+    flex-basis: 400px;
+}
+
+h1, h2, h3, article {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    font-size: 21pt;
+    margin-bottom: 0.5vw;
+}
+
+h2 {
+    margin-top:0.4vw;
+    margin-bottom: -1vw;
+}
+
+h3 {
+    font-size: 17pt;
+    margin-bottom: 0.1vw;
+}
+
+h2, #goback {
+    font-size: 18pt;
+}
+
+p {
+    margin-top: 14pt;
+}
+
+article, li {
+    font-size: 14pt;
+}
+
+/*
+Justification for position: I had to align city names on specific positions on a map image
+so I had to use position. El approved this.
+*/
+.map {
+    width: 39.01vw;
+    height: 39.47vw;
+    position: relative;
+    background-image: url('imgs/bosna.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+figure > img {
+    margin-top: 0.2vw;
+    width: 80%;
+    height: auto;
+}
+
+section {
+    min-width: 0;
+    
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    transition: background-color 0.1s;
+    background-color: rgba(240, 248, 255, 0.5);
+    background-image: none;
+}
+
+/*
+Justification for position: I had to align city names on specific positions on a map image
+so I had to use absolute positioning. El approved this.
+*/
+.map a {
+    position: absolute;
+    font-size: 1.8vw;
+}
+
+/*
+This is used so that text information floats on the map on city pages.
+*/
+.city .map {
+    z-index: -1;
+    position: absolute;
+}
+
+#goback {
+    background-color: rgba(180, 188, 195, 0.5);
+    margin: 0 auto;
+    display: block;
+    width: fit-content;
+}
+
+a:hover, #goback:hover {
+    background-color: rgba(70, 130, 180, 0.7);
+}
+
+/*
+    City specific title positions and background images below.
+
+    City title positions should be seen as coordinates of them on the map, so redundancy
+    CSS is not really redundancy here.
+*/
+.banjaluka .map  {
+    background-image: url('imgs/banjaluka.png');
+}
+.jajce .map {
+    background-image: url('imgs/jajce.png');
+}
+.donjivakuf .map {
+    background-image: url('imgs/donjivakuf.png');
+}
+.bugojno .map {
+    background-image: url('imgs/bugojno.png');
+}
+.prozorrama .map {
+    background-image: url('imgs/prozorrama.png');
+}
+.jablanica .map {
+    background-image: url('imgs/jablanica.png');
+}
+.mostar .map {
+    background-image: url('imgs/mostar.png');
+}
+.teslic .map {
+    background-image: url('imgs/teslic.png');
+}
+.tesanj .map {
+    background-image: url('imgs/tesanj.png');
+}
+.maglaj .map {
+    background-image: url('imgs/maglaj.png');
+}
+.zenica .map {
+    background-image: url('imgs/zenica.png');
+}
+.visoko .map {
+    background-image: url('imgs/visoko.png');
+}
+.ilidza .map {
+    background-image: url('imgs/ilidza.png');
+}
+.sarajevo .map {
+    background-image: url('imgs/sarajevo.png');
+}
+
+.map .banjaluka {
+    top: 14%;
+    left: 20%;
+}
+.map .jajce {
+    top: 30%;
+    left: 35%;
+}
+.map .donjivakuf {
+    top: 38%;
+    left: 25%;
+}
+.map .bugojno {
+    top: 43%;
+    left: 35%;
+}
+.map .prozorrama {
+    top: 49%;
+    left: 28%;
+}
+.map .jablanica {
+    top: 55%;
+    left: 36%;
+}
+.map .mostar {
+    top: 62%;
+    left: 42%;
+}
+.map .teslic {
+    top: 20%;
+    left: 42%;
+}
+.map .tesanj {
+    top: 18%;
+    left: 55%;
+}
+.map .maglaj {
+    top: 24%;
+    left: 60%;
+}
+.map .zenica {
+    top: 32%;
+    left: 59%;
+}
+.map .visoko {
+    top: 41%;
+    left: 60%;
+}
+.map .ilidza {
+    top: 49%;
+    left: 55%;
+}
+.map .sarajevo {
+    top: 48%;
+    left: 69%;
+}
+
