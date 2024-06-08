@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+  CS 132
+  CP2: List of Strings Visualizer
+  Name: A. Yusuf Kavranoglu
+  
+  Summary: This app allows the user to create a linked list of strings and visualize it.
+  This is the main and the only html file.
+-->
+
+<head>
+  <meta charset="UTF-8" />
+  <title>List of Strings Visualizer</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <!-- Provided helper files for DOM aliases and menu options -->
+  <script src="utils.js"></script>
+  <script defer src="scripts.js"></script>
+</head>
+
+<body>
+    <header>
+    <h1>List of Strings Visualizer</h1>
+    </header>
+
+    <main>
+        <section id="node-generator">
+            <h2>Select a node to interact with</h2>
+            <button id="create-btn">Create child</button>
+            <button id="delete-btn">Delete</button>
+            <textarea id="text-edit"></textarea>
+        </section>
+
+        <section id="assembly">
+            <h2>List visualization</h2>
+            <section class="node-wrapper">
+                <div class="node">
+                    <h3>Node ID: headNode</h3>
+                    <p>Child Node ID: null</p>
+                </div>
+                <p>==></p>
+                <div class="node-data">
+                    <h3>Node data</h3>
+                    <p>
+                        This is the head node. You can't delete this, but you can modify the text content of it.
+                    </p>
+                </div>
+            </section>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>Made by A. Yusuf Kavranoglu</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+
+/**
+ * CS 132
+ * CP2: List of Strings Visualizer
+ * Name: A. Yusuf Kavranoglu
+ * 
+ * CSS file for the app.
+ */
+
+body, #assembly, #node-generator, .node-wrapper, main {
+    display: flex;
+}
+
+body, #assembly, #node-generator {
+    flex-direction: column;
+}
+
+body {
+    text-align: center;
+    justify-content: space-between;
+    height: 100vh;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+footer {
+    margin-top: auto;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#node-generator {
+    max-width: 350px;
+}
+
+#assembly {
+    overflow-y: auto;
+    max-height: 80vh;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+body {
+    font-family: montserrat, sans-serif;
+}
+
+.node, .node-data {
+    border: 2px solid black;
+    min-height: 120px;
+    padding: 10px;
+}
+
+.node, .node-data {
+    width: 500px;
+}
+
+.node-wrapper {
+    border: 2px dashed black;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.node, .node-data, .node-wrapper {
+    border-radius: 20px;
+}
+
+body, .node-wrapper h2 {
+    padding: 0;
+}
+
+.selected {
+    border: 2px solid red;
+}
+
+#create-btn, #delete-btn {
+    height: 100px;
+    margin: 10px;
+}
+
+#text-edit {
+    min-width: 100px;
+    min-height: 200px;
+    max-width: 300px;
+    height: 150px;
+    text-align: left;
+    white-space: pre-line;
+}
+
+#create-btn, #delete-btn, #text-edit {
+    width: 300px;
+}
+
+.node, .node-data, #text-edit {
+    margin: 5px;
+}
