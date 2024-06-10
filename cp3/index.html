@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+  CS 132
+  CP2: List of Strings Visualizer
+  Name: A. Yusuf Kavranoglu
+  
+  Summary: This app allows the user to create a Spotify playlist by using Spotify API.
+  App displays song information in a nice way, allows the user to search for songs,
+  manipulate the order of the playlist, remove and add songs to the playlist.
+  CS 132 HW3 of 2024 was used, and my own CP2 for this year has been the inspiration.
+
+  This is the main and the only html file of the project.
+-->
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Spotify List Creator</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <!-- Provided helper files for DOM aliases and menu options -->
+  <script src="utils.js"></script>
+  <script defer src="scripts.js"></script>
+</head>
+
+<body>
+    <header>
+    <h1>Spotify List Creator</h1>
+    </header>
+
+    <main>
+        <section id="song-searcher">
+            <h2>Search for a song!</h2>
+            <p>Double click on a song to add it to the list</p>
+            <input type="text" placeholder="Search for a song">
+            <section id="search-results"></section>
+            <p id="message-area" class="hidden"></p>
+            
+        </section>
+
+        <section id="assembly">
+            <h2>Playlist</h2>
+            <p>Double click on a song to remove it from the list</p>
+            <section id="list"></section>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>Made by A. Yusuf Kavranoglu, Based on HW3 of Caltech's CS 132</p>
+        <a href="https://www.flaticon.com/free-icons/drop-down-menu" title="drop down menu icons">Drop down menu icons created by Smashicons - Flaticon</a>
+    </footer>
+</body>
+
+</html>

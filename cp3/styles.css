@@ -1,0 +1,137 @@
+
+/**
+ * CS 132
+ * CP2: List of Strings Visualizer
+ * Name: A. Yusuf Kavranoglu
+ * 
+ * CSS file for the app that allows the user to create a Spotify playlist by using Spotify API.
+ */
+
+ body, #assembly, #song-searcher, main, #search-results, footer, article {
+    display: flex;
+}
+
+body, #assembly, #song-searcher, #search-results {
+    flex-direction: column;
+}
+
+body {
+    text-align: center;
+    height: 100vh;
+    background-color: rgb(202, 197, 254);
+    font-family: montserrat, sans-serif;
+}
+
+main, #song-searcher, #assembly {
+    flex-grow: 1;
+    height: 80vh;
+}
+
+#song-searcher, #assembly {
+    flex-basis: 300px;
+    overflow-y: auto;
+    max-height: 80vh;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+footer {
+    margin-top: auto;
+    margin-bottom: 10px;
+    padding-bottom: 0;
+    justify-content: space-evenly;
+}
+
+article, input, #song-searcher, #assembly {
+    border-radius: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+article {
+    height: 80px;
+    position: relative;
+    margin-bottom: 10px;
+    overflow-x: auto;
+    min-width: 500px;
+}
+
+#song-searcher, article {
+    align-items: center;
+}
+
+body, article {
+    justify-content: space-between;
+}
+
+#search-results article {
+    border: 2px dashed black;
+}
+
+#assembly article, #song-searcher, #assembly {
+    border: 2px solid black;
+}
+
+article img {
+    max-height: 100%;
+}
+
+body, article img {
+    box-sizing: border-box;
+}
+
+h3, h4, article a, article  {
+    margin: 5px;
+}
+
+article a, article img {
+    padding: 10px;
+}
+
+h4 {
+    color: rgb(87, 87, 87);
+}
+
+input {
+    width: 300px;
+}
+
+h2, p {
+    margin-bottom: 5px;
+}
+
+.up-btn, .down-btn {
+    width: 30px;
+    position: absolute;
+    top: 2px;
+}
+
+.up-btn {
+    right: 34px;
+}
+
+.down-btn {
+    right: 2px;
+}
+
+button > img {
+    width: 100%;
+}
+
+body, button > img {
+    margin: 0;
+}
+
+body, button > img, p {
+    padding: 0;
+}
+
+p {
+    margin-top: 0;
+}
+
+input, article {
+    background-color: rgb(235, 234, 254);
+}
