@@ -18,8 +18,8 @@
     const BASE_URL = "https://api.spotify.com/v1/";
     const SEARCH_EP = BASE_URL + "search?";
 
-    const CLIENT_ID = "6261ee7023a44fedad0923ec4c760d6d";
-    const CLIENT_SECRET = "b3336e0324f4420e88df8d81aac62147";
+    const CLIENT_ID = "YOUR_ID";
+    const CLIENT_SECRET = "YOUR_KEY";
 
     const NEW_NODE_DATA = "This is a new node. Select this node to change this string.";
     const MAX_SEARCH_RESULTS = 5;
